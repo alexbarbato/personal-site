@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "personal-site",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Alex's personal site and place to play",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -15,6 +15,8 @@
   "dependencies": {
     "gatsby": "^2.3.25",
     "gatsby-plugin-netlify-cms": "^3.0.18",
+    "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-transformer-remark": "^2.3.8",
     "netlify-cms": "^2.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
