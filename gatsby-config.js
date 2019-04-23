@@ -1,5 +1,19 @@
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+          },
+          {
+            family: `Permanent Marker`,
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -9,5 +23,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify`,
   ],
 }

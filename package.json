@@ -14,21 +14,25 @@
   },
   "dependencies": {
     "gatsby": "^2.3.25",
+    "gatsby-plugin-netlify": "^2.0.14",
     "gatsby-plugin-netlify-cms": "^3.0.18",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-remark": "^2.3.8",
     "netlify-cms": "^2.9.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/alexbarbato/personal-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/alexbarbato/personal-site/issues"
   }
 }
