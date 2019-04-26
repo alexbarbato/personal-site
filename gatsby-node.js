@@ -34,3 +34,23 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
+
+exports.onCreateWebpackConfig = ({
+  stage,
+  getConfig,
+  rules,
+  loaders,
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "styled-components": path.resolve(
+          __dirname,
+          "node_modules",
+          "styled-components"
+        ),
+      },
+    },
+  })
+}
