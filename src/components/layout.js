@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from "styled-components"
 import React from "react"
 import { BACKGROUND_BASE } from "../utils/colors"
 import { device } from "../utils/breakpoints"
+import { Header } from "./header"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,9 +19,12 @@ const Grid = styled.div`
   }
 `
 
-export const Layout = ({ children }) => (
+export const Layout = ({ activePage, children }) => (
   <>
     <GlobalStyle />
-    <Grid>{children}</Grid>
+    <Grid>
+      <Header activePage={activePage ? activePage : null} />
+      {children}
+    </Grid>
   </>
 )
