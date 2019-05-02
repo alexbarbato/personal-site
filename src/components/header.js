@@ -49,6 +49,9 @@ export const Header = ({ activePage }) => (
     <HeaderLink active={activePage === "About"} href="/about">
       About
     </HeaderLink>
+    <HeaderLink active={activePage === "Blog"} href="/blog">
+      Blog
+    </HeaderLink>
     <HeaderLink active={activePage === "Credits"} href="/credits">
       Credits
     </HeaderLink>
