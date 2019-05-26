@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -13,7 +14,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
