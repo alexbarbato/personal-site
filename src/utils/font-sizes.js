@@ -1,3 +1,6 @@
 export const SMALL = "1rem"
+export const SHMEDIUM = "1.25rem"
 export const MEDIUM = "1.5rem"
 export const LARGE = "2rem"
+export const XLARGE = "3rem"
+export const XXLARGE = "4rem"

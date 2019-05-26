@@ -1,11 +1,13 @@
 import styled from "styled-components"
 import React from "react"
-import { MEDIUM } from "../utils/font-sizes"
-import { BLACK, PINK } from "../utils/colors"
 import { Link } from "gatsby"
 
+import { SHMEDIUM, MEDIUM } from "../../utils/font-sizes"
+import { BLACK, PINK } from "../../utils/colors"
+import { TEXT_SHADOW } from "../../utils/shadows"
+import { DEVICE } from "../../utils/breakpoints"
+
 const HeaderBase = styled.header`
-  height: 3rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -21,7 +23,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
 
   :hover {
     color: ${PINK};
-    text-shadow: ${BLACK} 1px 1px;
+    text-shadow: ${TEXT_SHADOW};
   }
 
   ${({ active }) =>
@@ -29,6 +31,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
     `
     :hover::after {
         background-color: ${PINK};
+        box-shadow: ${TEXT_SHADOW};
     }
 
     ::after {
@@ -40,9 +43,13 @@ const HeaderLink = styled(props => <Link {...props} />)`
         height: 3px;
         width: 100%;
     }`}
+
+    @media ${DEVICE.phoneOnly} {
+      font-size: ${SHMEDIUM};
+    }
 `
 
-export const Header = ({ activePage }) => (
+const Header = ({ activePage }) => (
   <HeaderBase>
     <HeaderLink active={activePage === "Home" ? "true" : null} to="/">
       Home
@@ -50,11 +57,14 @@ export const Header = ({ activePage }) => (
     <HeaderLink active={activePage === "About" ? "true" : null} to="/about">
       About
     </HeaderLink>
-    <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
+    {/* NO BLOG AS OF YET SO NO NEED FOR THE LINK */}
+    {/* <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
       Blog
-    </HeaderLink>
+    </HeaderLink> */}
     <HeaderLink active={activePage === "Credits" ? "true" : null} to="/credits">
       Credits
     </HeaderLink>
   </HeaderBase>
 )
+
+export default Header
