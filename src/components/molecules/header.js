@@ -6,11 +6,13 @@ import { SHMEDIUM, MEDIUM } from "../../utils/font-sizes"
 import { BLACK, PINK } from "../../utils/colors"
 import { TEXT_SHADOW } from "../../utils/shadows"
 import { DEVICE } from "../../utils/breakpoints"
+import { SMALL } from "../../utils/spacing"
 
 const HeaderBase = styled.header`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: ${SMALL}px;
 `
 
 const HeaderLink = styled(props => <Link {...props} />)`
