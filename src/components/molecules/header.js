@@ -17,7 +17,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
   color: ${BLACK};
   margin-left: 1rem;
   font-size: ${MEDIUM};
-  font-family: "Permy";
+  font-family: "Permanent Marker";
 
   :hover {
     color: ${PINK};
@@ -50,9 +50,10 @@ export const Header = ({ activePage }) => (
     <HeaderLink active={activePage === "About" ? "true" : null} to="/about">
       About
     </HeaderLink>
-    <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
+    {/* NO BLOG AS OF YET SO NO NEED FOR THE LINK */}
+    {/* <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
       Blog
-    </HeaderLink>
+    </HeaderLink> */}
     <HeaderLink active={activePage === "Credits" ? "true" : null} to="/credits">
       Credits
     </HeaderLink>
