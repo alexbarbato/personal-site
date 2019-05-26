@@ -2,6 +2,7 @@ import styled from "styled-components"
 import React from "react"
 import { MEDIUM } from "../utils/font-sizes"
 import { BLACK, PINK } from "../utils/colors"
+import { Link } from "gatsby"
 
 const HeaderBase = styled.header`
   height: 3rem;
@@ -10,7 +11,7 @@ const HeaderBase = styled.header`
   align-items: center;
 `
 
-const HeaderLink = styled.a`
+const HeaderLink = styled(props => <Link {...props} />)`
   position: relative;
   text-decoration: none;
   color: ${BLACK};
@@ -43,16 +44,16 @@ const HeaderLink = styled.a`
 
 export const Header = ({ activePage }) => (
   <HeaderBase>
-    <HeaderLink active={activePage === "Home"} href="/">
+    <HeaderLink active={activePage === "Home" ? "true" : null} to="/">
       Home
     </HeaderLink>
-    <HeaderLink active={activePage === "About"} href="/about">
+    <HeaderLink active={activePage === "About" ? "true" : null} to="/about">
       About
     </HeaderLink>
-    <HeaderLink active={activePage === "Blog"} href="/blog">
+    <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
       Blog
     </HeaderLink>
-    <HeaderLink active={activePage === "Credits"} href="/credits">
+    <HeaderLink active={activePage === "Credits" ? "true" : null} to="/credits">
       Credits
     </HeaderLink>
   </HeaderBase>
