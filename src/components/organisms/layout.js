@@ -1,14 +1,8 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 import React from "react"
-import { BACKGROUND_BASE } from "../utils/colors"
-import { device } from "../utils/breakpoints"
-import { Header } from "./header"
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: ${BACKGROUND_BASE};
-  }
-`
+import { device } from "../../utils/breakpoints"
+import { Header } from "../molecules/header"
+import GlobalStyle from "../atoms/reset"
 
 const Grid = styled.div`
   max-width: 1200px;

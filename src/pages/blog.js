@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout } from "../components/layout"
+import { Layout } from "../components/organisms/layout"
 
 export default () => (
   <Layout activePage="Blog">

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React from "react"
-import { MEDIUM } from "../utils/font-sizes"
-import { BLACK, PINK } from "../utils/colors"
+import { MEDIUM } from "../../utils/font-sizes"
+import { BLACK, PINK } from "../../utils/colors"
 import { Link } from "gatsby"
 
 const HeaderBase = styled.header`
@@ -17,7 +17,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
   color: ${BLACK};
   margin-left: 1rem;
   font-size: ${MEDIUM};
-  font-family: "Permanent Marker";
+  font-family: "Permy";
 
   :hover {
     color: ${PINK};
