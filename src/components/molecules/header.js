@@ -8,7 +8,6 @@ import { TEXT_SHADOW } from "../../utils/shadows"
 import { DEVICE } from "../../utils/breakpoints"
 
 const HeaderBase = styled.header`
-  height: 3rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -50,7 +49,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
     }
 `
 
-export const Header = ({ activePage }) => (
+const Header = ({ activePage }) => (
   <HeaderBase>
     <HeaderLink active={activePage === "Home" ? "true" : null} to="/">
       Home
@@ -67,3 +66,5 @@ export const Header = ({ activePage }) => (
     </HeaderLink>
   </HeaderBase>
 )
+
+export default Header

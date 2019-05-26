@@ -10,14 +10,12 @@ const HeroBase = styled.div`
   font-family: "Permanent Marker";
   font-size: ${XXLARGE};
   width: 100%;
-  min-height: 50vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media ${DEVICE.tabletDown} {
-    min-height: 70vh;
     font-size: ${LARGE};
   }
 `
