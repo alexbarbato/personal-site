@@ -1,8 +1,11 @@
 import styled from "styled-components"
 import React from "react"
-import { MEDIUM } from "../../utils/font-sizes"
-import { BLACK, PINK } from "../../utils/colors"
 import { Link } from "gatsby"
+
+import { SHMEDIUM, MEDIUM } from "../../utils/font-sizes"
+import { BLACK, PINK } from "../../utils/colors"
+import { TEXT_SHADOW } from "../../utils/shadows"
+import { DEVICE } from "../../utils/breakpoints"
 
 const HeaderBase = styled.header`
   height: 3rem;
@@ -21,7 +24,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
 
   :hover {
     color: ${PINK};
-    text-shadow: ${BLACK} 1px 1px;
+    text-shadow: ${TEXT_SHADOW};
   }
 
   ${({ active }) =>
@@ -29,6 +32,7 @@ const HeaderLink = styled(props => <Link {...props} />)`
     `
     :hover::after {
         background-color: ${PINK};
+        box-shadow: ${TEXT_SHADOW};
     }
 
     ::after {
@@ -40,6 +44,10 @@ const HeaderLink = styled(props => <Link {...props} />)`
         height: 3px;
         width: 100%;
     }`}
+
+    @media ${DEVICE.phoneOnly} {
+      font-size: ${SHMEDIUM};
+    }
 `
 
 export const Header = ({ activePage }) => (

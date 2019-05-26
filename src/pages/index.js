@@ -1,9 +1,9 @@
 import React from "react"
 import { Layout } from "../components/organisms/layout"
+import Hero from "../components/atoms/hero"
 
 export default () => (
   <Layout activePage="Home">
-    <h1 style={{ fontFamily: "Permanent Marker" }}>Alex's Site</h1>
-    <p style={{ fontFamily: "Roboto" }}>This should be fun...</p>
+    <Hero />
   </Layout>
 )
