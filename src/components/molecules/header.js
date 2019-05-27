@@ -56,8 +56,8 @@ const Header = ({ activePage }) => (
     <HeaderLink active={activePage === "Home" ? "true" : null} to="/">
       Home
     </HeaderLink>
-    <HeaderLink active={activePage === "About" ? "true" : null} to="/about">
-      About
+    <HeaderLink active={activePage === "Work" ? "true" : null} to="/work">
+      Work
     </HeaderLink>
     {/* NO BLOG AS OF YET SO NO NEED FOR THE LINK */}
     {/* <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">

@@ -22,7 +22,16 @@ module.exports = {
         name: "markdown-pages",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static`,
+        name: "static-assets",
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
