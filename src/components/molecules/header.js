@@ -53,19 +53,19 @@ const HeaderLink = styled(props => <Link {...props} />)`
 
 const Header = ({ activePage }) => (
   <HeaderBase>
-    <HeaderLink active={activePage === "Home" ? "true" : null} to="/">
+    {/* NOTE: NO OTHER PAGES YEST SO NOT NECESSARY */}
+    {/* <HeaderLink active={activePage === "Home" ? "true" : null} to="/">
       Home
     </HeaderLink>
     <HeaderLink active={activePage === "Work" ? "true" : null} to="/work">
       Work
     </HeaderLink>
-    {/* NO BLOG AS OF YET SO NO NEED FOR THE LINK */}
-    {/* <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
+    <HeaderLink active={activePage === "Blog" ? "true" : null} to="/blog">
       Blog
-    </HeaderLink> */}
+    </HeaderLink>
     <HeaderLink active={activePage === "Credits" ? "true" : null} to="/credits">
       Credits
-    </HeaderLink>
+    </HeaderLink> */}
   </HeaderBase>
 )
 
