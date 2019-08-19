@@ -22,14 +22,15 @@ const Grid = styled.div`
 
 const Main = styled.main`
   display: flex;
+  flex-direction: ${props => (props.column ? "column" : "row")};
 `
 
-export const Layout = ({ activePage, children }) => (
+export const Layout = ({ activePage, children, column }) => (
   <>
     <GlobalStyle />
     <Grid>
       <Header activePage={activePage ? activePage : null} />
-      <Main>{children}</Main>
+      <Main column={column}>{children}</Main>
       <Footer />
     </Grid>
   </>
