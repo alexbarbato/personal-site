@@ -13,20 +13,20 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.3.25",
-    "gatsby-image": "^2.1.1",
-    "gatsby-plugin-netlify": "^2.0.14",
-    "gatsby-plugin-netlify-cms": "^3.0.18",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
-    "gatsby-plugin-sharp": "^2.1.1",
-    "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-source-filesystem": "^2.0.29",
-    "gatsby-transformer-remark": "^2.3.8",
-    "gatsby-transformer-sharp": "^2.1.19",
-    "netlify-cms": "^2.9.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "gatsby": "^2.18.7",
+    "gatsby-image": "^2.2.37",
+    "gatsby-plugin-netlify": "^2.1.30",
+    "gatsby-plugin-netlify-cms": "^4.1.33",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-plugin-styled-components": "^3.1.16",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-remark": "^2.6.45",
+    "gatsby-transformer-sharp": "^2.3.9",
+    "netlify-cms": "^2.10.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "prettier": "^1.17.0"

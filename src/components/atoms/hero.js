@@ -33,7 +33,7 @@ const Hero = () => (
   <HeroBase>
     <HeroLine>Web Developer</HeroLine>
     <HeroLine pink>Husband and Father</HeroLine>
-    <HeroLine>Insistent Questioner</HeroLine>
+    <HeroLine>Persistent Questioner</HeroLine>
   </HeroBase>
 )
 
